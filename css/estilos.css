@@ -22,20 +22,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 60px;
   padding: 20px 0px; }
 
-.menu-icon img{
-  width: 30px;
-  height: 30px;
-  border-radius: 2px;
-}  
-
-.menu-icon, #check{
-  display: none;
-}
-
 .nav-brand {
-  min-width: 160px; }
+  width: 160px; }
 
 ul {
   list-style: none; }
@@ -46,8 +37,7 @@ a {
 
 /*NAV-LEFT*/
 .nav-bar ul {
-  display: flex;
- }
+  display: flex; }
 
 .nav-bar ul li {
   padding: 10px; }
@@ -55,6 +45,9 @@ a {
 .nav-bar ul li a:hover {
   border-bottom: 2px solid #000000; }
 
+.nav-bar ul .nav-menu {
+  flex: 1;
+  margin-left: 30px; }
 
 ul {
   list-style: none; }
@@ -67,16 +60,17 @@ hr {
   margin-top: 10px; }
 
 /*FIN-NAVEGETION*/
-/*SECTION*/
- .section-principal{
+/*HEADER*/
+header {
   margin-top: 15px;
-  margin-bottom: 20px; 
- }
+  margin-bottom: 20px;
+  width: 100%;
+  height: 300px; }
 
 .cabecera-inicial {
   position: relative;
   height: 300px;
- }
+  width: 100%; }
 
 .cabecera-inicial img {
   float: left;
@@ -130,7 +124,7 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 50%;
   border: 3px solid #000000;
   height: 350px; }
 
@@ -143,8 +137,7 @@ hr {
 .informacion-de-autos p {
   font-size: 20px;
   text-align: center;
-  overflow: auto;
- }
+  overflow: auto; }
 
 /*FIN-INFORMACION-DE-AUTOS*/
 /*INFORMACION-EXTRA*/
@@ -153,7 +146,7 @@ hr {
   grid-template-columns: 1fr 1fr;
   gap: 25px;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: px;
   height: 350px; }
 
 .formulario-infomacion-extra div {
@@ -171,17 +164,16 @@ hr {
   font-size: 20px; }
 
 #nosotros {
-  margin-top: 20px;
+  margin-top: 40px;
   width: 100%;
-  text-align: center;
-}
+  text-align: center; }
 
 /*ESTILOS-DE-FORMULARIO*/
 form {
   top: 0px;
   margin: 0 auto;
   width: 250px;
-  min-height: 360px;
+  height: 360px;
   padding: 20px; }
 
 label {
@@ -237,30 +229,27 @@ textarea {
   justify-content: center;
   background: #2f3640;
   text-align: center;
-  min-width: 100%;
-  min-height: 50px; }
+  width: 100%;
+  height: 50px; }
 
 /*FIN-DE-FOOTER*/
 @media (max-width: 768px) {
+  .Container-superior {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
 
-.Container-superior {
-  width: 75%;
-  display: flex;
-  flex-direction: column; 
-  align-items: center;
-}
-  .check-btn{
-    display: block;
-  }
+  .check-btn {
+    display: block; }
 
-  .menu-icon{
-   display: flex;
-   justify-content: center;
-   cursor: pointer;
-   padding-left: 140px;
-  }
+  .menu-icon {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    padding-left: 140px; }
 
-  .nav-bar-right ul{
+  .nav-bar-right ul {
     display: block;
     position: fixed;
     top: 70px;
@@ -268,62 +257,50 @@ textarea {
     background: #222;
     width: 100%;
     height: 100vh;
-    right: 0;
-  }
+    right: 0; }
 
-  .nav-bar-right ul li{
+  .nav-bar-right ul li {
     padding: 2rem;
     display: flex;
     justify-content: center;
-    margin: 0;
-  }
+    margin: 0; }
 
   .nav-bar ul li a {
-    color: #f0f8ff;
- }
+    color: #f0f8ff; }
 
+  #check:checked ~ ul {
+    left: 0; }
 
-  #check:checked ~ ul{
-        left: 0;
-  }
+  .section-inicial, .cabecera-inicial img {
+    display: none; }
 
-  .section-inicial, .cabecera-inicial img{
-    display: none;
-  }
-
-  .galeria-foto-autos{
+  .galeria-foto-autos {
     grid-template-columns: repeat(1, 1fr);
     padding-top: 70px;
     margin-left: auto 0;
-    margin-right: auto 0;
-  }
+    margin-right: auto 0; }
 
-  .galeria-foto-autos div img{
+  .galeria-foto-autos div img div img {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-  }
+    width: 100%; }
 
-  .informacion-de-autos{
-    flex-direction: column;
-  }
+  .informacion-de-autos {
+    flex-direction: column; }
 
-  .informacion-de-autos div{
+  .informacion-de-autos div {
     padding-left: 200px;
-    padding-right: 200px;
-  }
+    padding-right: 200px; }
 
-  .formulario-infomacion-extra{
+  .formulario-infomacion-extra {
     display: flex;
-   flex-direction: column;
-  }
+    flex-direction: column; }
 
-  .footer-links{
-    margin-top: 200px;
-  }
+  .footer-links {
+    margin-top: 250px; }
 
-  .footer-container{
-    grid-template-columns: repeat(1, 1fr);
+  .footer-container {
+    margin-top: 260px;
+    grid-template-columns: repeat(1, 1fr); } 
   }
- }

@@ -2,21 +2,15 @@
 $color-gris-claro: #999999;
 $titulos: 'Redressed', cursive;
 $universal: border-box;
-
-
-
-
 /*SASS*/
 *{
         margin: 0;
         padding: 0;
         box-sizing: $universal; /*CAMBIE VARIABLE UNIVERSAL*/
     }
-
     html {
         height: 100%;
     }
-
     body {
         background-image: url(../imagenes/background.png);
     }
@@ -25,10 +19,7 @@ $universal: border-box;
         width: 75%;
         margin: auto;
     }
-
-
     /*NAVEGETION*/
-
     .nav-bar {
         font-size: 17px;
         display: flex;
@@ -37,7 +28,6 @@ $universal: border-box;
         height: 60px;
         padding: 20px 0px;
     }
-
     .nav-brand {
         width: 160px;
     }
@@ -50,9 +40,7 @@ $universal: border-box;
         text-decoration: none;
         color: #000;
     }
-
     /*NAV-LEFT*/
-
     .nav-bar{
 
         ul{
@@ -60,7 +48,6 @@ $universal: border-box;
         }
         
     }
-
     .nav-bar{
        ul{
          li{
@@ -68,7 +55,6 @@ $universal: border-box;
          }
        }
     }
-
     .nav-bar{
        ul{
            li{
@@ -78,7 +64,6 @@ $universal: border-box;
            }
        }
     }
-
     .nav-bar{
         ul{
             .nav-menu{
@@ -87,38 +72,29 @@ $universal: border-box;
             }
         }
     }
-
     ul {
         list-style: none;
     }
-
     a {
         text-decoration: none;
         color: #000;
     }
-
     hr {
         margin-top: 10px;
     }
-
-
     /*FIN-NAVEGETION*/
-
     /*HEADER*/
-
     header {
         margin-top: 15px;
         margin-bottom: 20px;
         width: 100%;
         height: 300px;
     }
-
     .cabecera-inicial {
         position: relative;
         height: 300px;
         width: 100%;
     }
-
     .cabecera-inicial{
        img{
         float: left;
@@ -126,7 +102,6 @@ $universal: border-box;
         padding: 15px;
        }
     }
-
     .cabecera-inicial{
        h1{
             font-family: $titulos; /*CAMBIE EL TEXTO POR UNA VARIABLE*/
@@ -134,7 +109,6 @@ $universal: border-box;
             font-size: 40px;
        }
     }
-
     .cabecera-inicial{
       p{
         font-family: arial;
@@ -142,33 +116,26 @@ $universal: border-box;
         text-align: center;
       }
     }
-
     /*FIN-DE-HEADER*/
-
     /*SECTION*/
-
     /*GALERIA-DE-AUTOS*/
-
     .galeria-foto-autos {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 25px;
     }
-
     .galeria-foto-autos{
         img{
             width: 100%;
             height: 180px;
         }
     }
-
     .galeria-foto-autos  {
         h2{
             font-size: 20px;
              margin: 10px 0px;
         }
     }
-
     .galeria-foto-autos{
 
         div:hover{
@@ -179,11 +146,8 @@ $universal: border-box;
         }
        
     }
-
     /*FIN-DE-GALERIA-DE-AUTOS*/
-
     /*INFORMACION-DE-AUTOS*/
-
     .informacion-de-autos {
         display: flex;
         flex-direction: row;
@@ -191,7 +155,6 @@ $universal: border-box;
         margin-top: 20px;
         margin-bottom: 20px;
     }
-
     .informacion-de-autos{
 
         div{
@@ -205,7 +168,6 @@ $universal: border-box;
         }
         
     }
-
     .informacion-de-autos{
         h3 {
                 font-family: $titulos;/*CAMBIE LA VARIABLE TITULO*/
@@ -213,19 +175,15 @@ $universal: border-box;
                 text-align: center;
             }
     }
-
     .informacion-de-autos{
         p{
             font-size: 20px;
-            text-align: center
+            text-align: center;
+            overflow: auto;
         }
     }
-
-
     /*FIN-INFORMACION-DE-AUTOS*/
-
     /*INFORMACION-EXTRA*/
-
     .formulario-infomacion-extra {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -234,7 +192,6 @@ $universal: border-box;
         margin-bottom: px;
         height: 350px;
     }
-
     .formulario-infomacion-extra{
 
         div{
@@ -244,7 +201,6 @@ $universal: border-box;
         }
        
     }
-
     .formulario-infomacion-extra{
         h4{
             font-size: 30px;
@@ -252,19 +208,15 @@ $universal: border-box;
             font-family: $titulos;/*CAMBIE POR LA VARIABLE TITULO*/
         }
     }
-
     .formulario-infomacion-extra p {
         font-size: 20px;
     }
-
     #nosotros {
         margin-top: 40px;
         width: 100%;
         text-align: center;
     }
-
     /*ESTILOS-DE-FORMULARIO*/
-
     form {
         top: 0px;
         margin: 0 auto;
@@ -272,42 +224,31 @@ $universal: border-box;
         height: 360px;
         padding: 20px;
     }
-
     label {
         text-align: left;
         padding: 15px;
         font-size: 17px;
         color: $color-gris-claro; /*CAMBIE LA VARIABLE COLOR GRIS*/
     }
-
-
     input,
     textarea {
         outline: none;
     }
-
     textarea {
         margin-top: 10px;
     }
-
     .field {
         padding: 10px;
     }
-
     .btn {
         padding-bottom: 0px;
     }
-
     /*FIN-INFORMACION-EXTRA*/
     /*FIN-SECTION*/
-
     /*INICIO-FOOTER*/
-
-
     .footer-links {
         padding: 35px 0px;
     }
-
     .footer-container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -315,7 +256,6 @@ $universal: border-box;
         align-items: flex-start;
         justify-content: center;
     }
-
     .footer-container h4 {
         font-family: $titulos; /*CAMBIE LA VARIABLE TITULO*/
         font-size: 25px;
@@ -323,8 +263,6 @@ $universal: border-box;
         width: 75%;
 
     }
-
-
     .footer-container{
        UL{
         margin-left: auto;
@@ -349,25 +287,109 @@ $universal: border-box;
 
     /*FIN-DE-FOOTER*/
 
-    @media (max-width:700px) {
+   @media (max-width: 768px) {
 
-        .nav-bar ul.nav-menu {
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background: #2f3640;
-            height: 100%;
-            padding: 30px;
-            opacity: .9;
-            transform: translateX(-20px);
-        }
+.Container-superior {
+  width: 75%;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+  .check-btn{
+    display: block;
+  }
 
-        .galeria-foto-autos {
-            grid-template-columns: repeat(2, 1fr);
-        }
+  .menu-icon{
+   display: flex;
+   justify-content: center;
+   cursor: pointer;
+   padding-left: 140px;
+  }
 
-        .informacion-de-autos {
-            flex-direction: column;
+  .nav-bar-right{
+    ul{
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        background: #222;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+    }
+    
+  }
+
+  .nav-bar-right{
+    ul{
+        li{
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            margin: 0;
         }
     }
+  }
+
+  .nav-bar{
+    ul{
+        li{
+            a{
+                color: #f0f8ff
+            }
+        }
+    }
+ }
+
+
+  #check:checked ~ ul{
+        left: 0;
+  }
+
+  .section-inicial, .cabecera-inicial img{
+    display: none;
+  }
+
+  .galeria-foto-autos{
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 70px;
+    margin-left: auto 0;
+    margin-right: auto 0;
+  }
+
+  .galeria-foto-autos div img{
+    div{
+        img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+    }
+  }
+
+  .informacion-de-autos{
+    flex-direction: column;
+  }
+
+  .informacion-de-autos{
+    div{
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+  }
+
+  .formulario-infomacion-extra{
+    display: flex;
+   flex-direction: column;
+  }
+
+  .footer-links{
+    margin-top: 250px;
+  }
+
+  .footer-container{
+    margin-top: 260px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+ }
