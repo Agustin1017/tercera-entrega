@@ -19,6 +19,7 @@ $universal: border-box;
         width: 75%;
         margin: auto;
     }
+    
     /*NAVEGETION*/
     .nav-bar {
         font-size: 17px;
@@ -114,6 +115,7 @@ $universal: border-box;
         font-family: arial;
         margin-top: 50px;
         text-align: center;
+        color: #000000;
       }
     }
     /*FIN-DE-HEADER*/
@@ -123,6 +125,8 @@ $universal: border-box;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 25px;
+        margin-bottom: 10px;
+        margin-top: 10px;
     }
     .galeria-foto-autos{
         img{
@@ -133,7 +137,8 @@ $universal: border-box;
     .galeria-foto-autos  {
         h2{
             font-size: 20px;
-             margin: 10px 0px;
+            margin: 10px 0px;
+            text-align: center;
         }
     }
     .galeria-foto-autos{
@@ -141,7 +146,6 @@ $universal: border-box;
         div:hover{
             box-shadow: 0px 0px 5px 5px #000000;
             opacity: 10px;
-            padding: 5px;
             cursor: pointer;
         }
        
@@ -246,25 +250,25 @@ $universal: border-box;
     /*FIN-INFORMACION-EXTRA*/
     /*FIN-SECTION*/
     /*INICIO-FOOTER*/
-    .footer-links {
+    .links-container {
         padding: 35px 0px;
     }
-    .footer-container {
+    .pie-container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 10px;
         align-items: flex-start;
         justify-content: center;
     }
-    .footer-container h4 {
+    .pie-container h4 {
         font-family: $titulos; /*CAMBIE LA VARIABLE TITULO*/
         font-size: 25px;
         border-bottom: 1px solid #000000;
         width: 75%;
 
     }
-    .footer-container{
-       UL{
+    .pie-container{
+       ul{
         margin-left: auto;
         margin-right: auto;
        }
@@ -384,12 +388,26 @@ $universal: border-box;
    flex-direction: column;
   }
 
-  .footer-links{
-    margin-top: 250px;
+
+
+  #contacto{
+    margin-top: 90px;
   }
 
-  .footer-container{
+
+  .links-container{
+    margin-top: 280px;
+    }
+
+  .pie-container{
     margin-top: 260px;
     grid-template-columns: repeat(1, 1fr);
+    }
+
+  .footer{
+    h5{
+        font-size: 12px;
+        color: #f0f8ff;
+    }
   }
  }

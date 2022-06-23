@@ -86,7 +86,8 @@ header {
 .cabecera-inicial p {
   font-family: arial;
   margin-top: 50px;
-  text-align: center; }
+  text-align: center;
+  color: #000000; }
 
 /*FIN-DE-HEADER*/
 /*SECTION*/
@@ -94,7 +95,9 @@ header {
 .galeria-foto-autos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 25px; }
+  gap: 25px;
+  margin-bottom: 10px;
+  margin-top: 10px; }
 
 .galeria-foto-autos img {
   width: 100%;
@@ -102,12 +105,12 @@ header {
 
 .galeria-foto-autos h2 {
   font-size: 20px;
-  margin: 10px 0px; }
+  margin: 10px 0px;
+  text-align: center; }
 
 .galeria-foto-autos div:hover {
   box-shadow: 0px 0px 5px 5px #000000;
   opacity: 10px;
-  padding: 5px;
   cursor: pointer; }
 
 /*FIN-DE-GALERIA-DE-AUTOS*/
@@ -199,24 +202,24 @@ textarea {
 /*FIN-INFORMACION-EXTRA*/
 /*FIN-SECTION*/
 /*INICIO-FOOTER*/
-.footer-links {
+.links-container {
   padding: 35px 0px; }
 
-.footer-container {
+.pie-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   align-items: flex-start;
   justify-content: center; }
 
-.footer-container h4 {
+.pie-container h4 {
   font-family: "Redressed", cursive;
   /*CAMBIE LA VARIABLE TITULO*/
   font-size: 25px;
   border-bottom: 1px solid #000000;
   width: 75%; }
 
-.footer-container UL {
+.pie-container ul {
   margin-left: auto;
   margin-right: auto; }
 
@@ -284,8 +287,13 @@ textarea {
   .formulario-infomacion-extra {
     display: flex;
     flex-direction: column; }
-  .footer-links {
-    margin-top: 250px; }
-  .footer-container {
+  #contacto {
+    margin-top: 90px; }
+  .links-container {
+    margin-top: 280px; }
+  .pie-container {
     margin-top: 260px;
-    grid-template-columns: repeat(1, 1fr); } }
+    grid-template-columns: repeat(1, 1fr); }
+  .footer h5 {
+    font-size: 12px;
+    color: #f0f8ff; } }
